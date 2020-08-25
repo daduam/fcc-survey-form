@@ -51,19 +51,19 @@
             <fieldset>
                 <legend>How did your hear about this website?</legend>
 
-                <input type="radio" id="social-media" name="inform">
+                <input type="radio" id="social-media" name="inform" value="social-media">
                 <label for="social-media">Social Media</label><br />
 
-                <input type="radio" id="advertising" name="inform">
+                <input type="radio" id="advertising" name="inform" value="advertising">
                 <label for="advertising">Advertising</label><br />
 
-                <input type="radio" id="search-engine" name="inform">
+                <input type="radio" id="search-engine" name="inform" value="search-engine">
                 <label for="search-engine">Search Engine</label><br />
 
-                <input type="radio" id="friend" name="inform">
+                <input type="radio" id="friend" name="inform" value="friend">
                 <label for="friend">Friend</label><br />
 
-                <input type="radio" id="other" name="inform">
+                <input type="radio" id="other" name="inform" value="other">
                 <input type="text" placeholder="Other"><br />
             </fieldset>
         </div>
@@ -72,19 +72,19 @@
             <fieldset>
                 <legend>What browser do you use?</legend>
 
-                <input type="radio" name="browser" id="chrome">
+                <input type="radio" name="browser" id="chrome" value="chrome">
                 <label for="chrome">Google Chrome</label>
                 <br>
-                <input type="radio" name="browser" id="firefox">
+                <input type="radio" name="browser" id="firefox" value="firefox">
                 <label for="firefox">Firefox</label>
                 <br>
-                <input type="radio" name="browser" id="ie">
+                <input type="radio" name="browser" id="ie" value="ie">
                 <label for="ie">Internet Explorer</label>
                 <br>
-                <input type="radio" name="browser" id="safari">
+                <input type="radio" name="browser" id="safari" value="safari">
                 <label for="safari">Safari</label>
                 <br>
-                <input type="radio" name="browser" id="opera">
+                <input type="radio" name="browser" id="opera" value="opera">
                 <label for="opera">Opera</label>
                 <br>
             </fieldset>
@@ -94,23 +94,23 @@
             <fieldset>
                 <legend>Select favorite programming language(s)</legend>
 
-                <input type="checkbox" name="language" id="ccpp">
+                <input type="checkbox" name="language" id="ccpp" value="ccpp">
                 <label for="ccpp">C/C++</label><br />
 
-                <input type="checkbox" name="language" id="python">
+                <input type="checkbox" name="language" id="python" value="python">
                 <label for="python">Python</label><br />
 
-                <input type="checkbox" name="language" id="javascript">
+                <input type="checkbox" name="language" id="javascript" value="javascript">
                 <label for="javascript">JavaScript</label><br />
 
-                <input type="checkbox" name="language" id="java">
+                <input type="checkbox" name="language" id="java" value="java">
                 <label for="java">Java</label><br />
 
-                <input type="checkbox" name="language" id="rust">
+                <input type="checkbox" name="language" id="rust" value="rust">
                 <label for="rust">Rust</label><br />
 
-                <input type="checkbox" name="language" id="others">
-                <input type="text" name="language" id="other" placeholder="separate each input by a space">
+                <input type="checkbox" name="language" id="others" value="other">
+                <input type="text" name="language" id="others-input" placeholder="separate each input by a space">
             </fieldset>
         </div>
 
@@ -121,8 +121,10 @@
             </fieldset>
         </div>
 
-        <button type="submit">Submit Response</button>
+        <button type="submit" id="submit">Submit Response</button>
     </form>
+
+    <script src=" https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
 </html>
