@@ -1,0 +1,54 @@
+body {
+    width: 60vw;
+    margin: auto;
+    font-family: monospace;
+}
+
+header {
+    background: url(https://images.template.net/wp-content/uploads/2016/12/06103859/Black-and-White-Tree-Illustration.jpg?width=100);
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+div {
+    margin: 2em 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left, .right {
+    margin: 0;
+}
+
+textarea {
+    width: 99%;
+}
+
+legend {
+    background-color: #000;
+    color: #fff;
+    padding: 3px 6px;
+}
+
+button {
+    padding: 0.8em;
+    font-size: 0.8em;
+    border: 1px solid black;
+    background: white;
+    color: black;
+}
+
+button:hover {
+    padding: 0.9em;
+    font-size: 0.9em;
+    border: 1px solid white;
+    background: black;
+    color: white;
+}
+
+form {
+    margin-bottom: 2em;
+}

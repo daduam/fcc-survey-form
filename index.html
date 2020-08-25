@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">We want to hear from you!</p>
+    </header>
+
+    <hr>
+
+    <form action="#" id="survey-form">
+        <div class="row">
+            <div class="left">
+                <label for="name" id="name-label">Full Name</label>
+                <input type="text" name="name" id="name" placeholder="eg. John Doe" required>
+            </div>
+
+            <div class="right">
+                <label for="email" id="email-label">Email address</label>
+                <input type="email" name="email" id="email" placeholder="eg. jd@rocks.com" required>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="left">
+                <label for="age" id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="13" max="27" placeholder="Ages from 13-27">
+            </div>
+
+            <div class="right">
+                <label for="sex" id="dropdown-label">Sex</label>
+                <select name="sex" id="dropdown">
+                    <option value="">--Please choose an option--</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="other">Other</option>
+                    <option value="not-given">Prefer not to say</option>
+                </select>
+            </div>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>How did your hear about this website?</legend>
+
+                <input type="radio" id="social-media" name="inform">
+                <label for="social-media">Social Media</label><br />
+
+                <input type="radio" id="advertising" name="inform">
+                <label for="advertising">Advertising</label><br />
+
+                <input type="radio" id="search-engine" name="inform">
+                <label for="search-engine">Search Engine</label><br />
+
+                <input type="radio" id="friend" name="inform">
+                <label for="friend">Friend</label><br />
+
+                <input type="radio" id="other" name="inform">
+                <input type="text" placeholder="Other"><br />
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>What browser do you use?</legend>
+
+                <input type="radio" name="browser" id="chrome">
+                <label for="chrome">Google Chrome</label>
+                <br>
+                <input type="radio" name="browser" id="firefox">
+                <label for="firefox">Firefox</label>
+                <br>
+                <input type="radio" name="browser" id="ie">
+                <label for="ie">Internet Explorer</label>
+                <br>
+                <input type="radio" name="browser" id="safari">
+                <label for="safari">Safari</label>
+                <br>
+                <input type="radio" name="browser" id="opera">
+                <label for="opera">Opera</label>
+                <br>
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>Select favorite programming language(s)</legend>
+
+                <input type="checkbox" name="language" id="ccpp">
+                <label for="ccpp">C/C++</label><br />
+
+                <input type="checkbox" name="language" id="python">
+                <label for="python">Python</label><br />
+
+                <input type="checkbox" name="language" id="javascript">
+                <label for="javascript">JavaScript</label><br />
+
+                <input type="checkbox" name="language" id="java">
+                <label for="java">Java</label><br />
+
+                <input type="checkbox" name="language" id="rust">
+                <label for="rust">Rust</label><br />
+
+                <input type="checkbox" name="language" id="others">
+                <input type="text" name="language" id="other" placeholder="separate each input by a space">
+            </fieldset>
+        </div>
+
+        <div>
+            <fieldset>
+                <legend>How can we improve this survey?</legend>
+                <textarea name="textarea" id="textarea" cols="30" rows="10"></textarea>
+            </fieldset>
+        </div>
+
+        <button type="submit">Submit Response</button>
+    </form>
+</body>
+
+</html>
