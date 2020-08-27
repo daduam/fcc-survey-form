@@ -4,12 +4,6 @@ body {
     font-family: monospace;
 }
 
-header {
-    background: url(https://images.template.net/wp-content/uploads/2016/12/06103859/Black-and-White-Tree-Illustration.jpg?width=100);
-    background-position: right;
-    background-repeat: no-repeat;
-}
-
 div {
     margin: 2em 0;
 }
@@ -51,4 +45,22 @@ button:hover {
 
 form {
     margin-bottom: 2em;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+    body {
+        width: 90vw;
+        margin: auto;
+    }
+
+    .row {
+        display: block;
+        margin: 0;
+    }
+
+    .left, .right {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 1em;
+    }
 }
